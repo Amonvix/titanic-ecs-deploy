@@ -16,9 +16,12 @@ category_mappings = {
 }
 
 # Paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCALER_PATH = os.path.join(BASE_DIR, "models", "keras_scaler.pkl")
-MODEL_PATH = os.path.join(BASE_DIR, "models", "model.h5")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # já aponta para /scripts/
+ROOT_DIR = os.path.dirname(BASE_DIR)  # volta pro root do projeto
+
+SCALER_PATH = os.path.join(ROOT_DIR, "models", "keras_scaler.pkl")
+MODEL_PATH = os.path.join(ROOT_DIR, "models", "model.h5")
+
 
 # Lazy-loaded scaler
 model = load_model(MODEL_PATH)

@@ -1,13 +1,13 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
+# Executa as migrações e inicia o servidor
 python manage.py collectstatic --noinput
 python manage.py migrate
-python manage.py loaddata initial_data.json || true
-# Start the Gunicorn server
-# Ensure the environment is set up correctly
 
-
-
-exec gunicorn titanic_project.wsgi:application --bind 0.0.0.0:8000
-
+# Inicia o Gunicorn com binding para ECS
+exec gunicorn titanic_project.wsgi:application \
+    --bind 0.0.0.0:80 \
+    --workers 4 \
+    --threads 2 \
+    --timeout 120
