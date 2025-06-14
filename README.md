@@ -1,4 +1,4 @@
-[![API online](https://img.shields.io/badge/🔮%20Titanic%20IA-Online-brightgreen)](https://titanic-api-ezpf.onrender.com)
+AWS PORTFOLIO PROJECT -
 
 # 🧠 Titanic Survival Prediction – Data Science Project
 
@@ -62,18 +62,18 @@ titanic-survival-prediction/
 ## 🧪 Upcoming Tasks
 
 ## 🤖 5. Deep Learning with TensorFlow/Keras
-- [ ] Build a simple feedforward neural network using Keras
-- [ ] Train and evaluate the model
-- [ ] Plot training and validation curves
+- [x] Build a simple feedforward neural network using Keras
+- [x] Train and evaluate the model
+- [x] Plot training and validation curves
 
 ## 🔁 6. Comparison with PyTorch
-- [ ] Build an equivalent model using PyTorch
-- [ ] Train and compare results side-by-side
+- [x] Build an equivalent model using PyTorch
+- [x] Train and compare results side-by-side
 
 ## 🌐 7. Deployment (Bonus)
-- [ ] Save trained models using joblib or keras.models.save_model
-- [ ] Wrap prediction logic in a Django REST API (optional)
-- [ ] Deploy via Docker or Render (optional)
+- [x] Wrap prediction logic in a Django REST API
+- [x] Save trained models using dockers
+- [x] Deploy via Docker in AWS ECS
 
 
 
@@ -81,7 +81,7 @@ titanic-survival-prediction/
 
 bash
 # Step 1: Activate virtual environment
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Step 2: Run scripts
 python scripts/load_dataset.py
@@ -91,4 +91,6 @@ python scripts/visualize_dataset.py
 
 This project is part of a broader portfolio aimed at showcasing skills in data analysis, model development, and clean code practices for real-world machine learning scenarios.
 
-
+👨‍💻 Autor
+Daniel Pedroso (Amon)
+Backend Developer | Java & Python | Projects focused on quality and professional deployment.
