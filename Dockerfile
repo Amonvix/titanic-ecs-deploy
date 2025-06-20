@@ -11,7 +11,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expõe a porta padrão do Django
-EXPOSE 8000
+EXPOSE 8001
 
 # Comando para rodar a aplicação com gunicorn via WSGI
-CMD ["gunicorn", "titanic_project.wsgi:application", "--bind", "0.0.0.0:8000"]
+CMD ["gunicorn", "titanic_project.wsgi:application", "--bind", "0.0.0.0:8001"]
