@@ -388,3 +388,6 @@
 [2025-06-23 16:18:00,240] INFO in views: ✅ Keras model loaded successfully.
 [2025-06-23 16:19:06,847] INFO in views: ✅ Keras model loaded successfully.
 [2025-06-23 16:30:09,121] INFO in views: ✅ Keras model loaded successfully.
+[2025-06-23 16:43:33,129] INFO in views: ✅ Keras model loaded successfully.
+[2025-06-23 16:43:40,749] INFO in views: ✅ Keras model loaded successfully.
+[2025-06-23 16:43:40,977] WARNING in log: Not Found: /favicon.ico
