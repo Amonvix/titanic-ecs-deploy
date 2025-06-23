@@ -4,18 +4,20 @@ FROM python:3.11-slim
 # Define o diretório de trabalho
 WORKDIR /app
 
-# Copia os arquivos
-COPY . .
+# 1. Copie APENAS o arquivo de dependências primeiro.
+COPY requirements.txt .
 
-# Instala as dependências
+# 2. Instale as dependências. Esta camada só será refeita se o requirements.txt mudar.
 RUN pip install --no-cache-dir -r requirements.txt
 
-# 1. Dê permissão de execução para o seu script
+# 3. AGORA SIM, copie o resto do código da sua aplicação.
+COPY . .
+
+# Dê permissão de execução para o seu script
 RUN chmod +x /app/entrypoint.sh
 
 # Expõe a porta que a aplicação vai usar
 EXPOSE 8001
 
-# 2. Defina o seu script como o "ponto de entrada" do contêiner.
-# A linha CMD antiga foi removida, pois o comando já está no entrypoint.
+# Define o seu script como o "ponto de entrada" do contêiner.
 ENTRYPOINT [ "/app/entrypoint.sh" ]
