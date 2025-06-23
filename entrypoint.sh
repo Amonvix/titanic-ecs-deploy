@@ -7,7 +7,7 @@ python manage.py migrate
 
 # Inicia o Gunicorn com binding para ECS
 exec gunicorn titanic_project.wsgi:application \
-    --bind 0.0.0.0:80 \
+    --bind 0.0.0.0:8001 \
     --workers 4 \
     --threads 2 \
     --timeout 120

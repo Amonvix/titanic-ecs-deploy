@@ -385,3 +385,6 @@
 [2025-06-10 14:00:26,673] INFO in views: Received input: {'sex': 'male', 'age': 22, 'sibsp': 1, 'parch': 0, 'fare': 7.25, 'embarked': 'S', 'who': 'man', 'alone': 0, 'class': 'Third', 'deck': 'C', 'embark_town': 'Southampton', 'pclass': 3, 'adult_male': 1}
 [2025-06-10 14:00:26,760] INFO in views: Prediction result: {'survived': True, 'confidence': 1.0}
 [2025-06-10 14:00:26,762] INFO in basehttp: "POST /predict/ HTTP/1.1" 200 37
+[2025-06-23 16:18:00,240] INFO in views: ✅ Keras model loaded successfully.
+[2025-06-23 16:19:06,847] INFO in views: ✅ Keras model loaded successfully.
+[2025-06-23 16:30:09,121] INFO in views: ✅ Keras model loaded successfully.
